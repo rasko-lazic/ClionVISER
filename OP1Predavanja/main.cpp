@@ -1,8 +1,9 @@
-#include <iostream>
+#include "Predavanje2.cpp"
 
 using namespace std;
 
 int main() {
-    cout << "Hello, World!" << endl;
-    return 0;
+    Predavanje2 prog;
+
+    prog.execute();
 }
