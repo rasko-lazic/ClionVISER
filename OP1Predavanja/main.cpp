@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    Predavanje2 prog;
+    Predavanje2 newSrc;
 
-    prog.execute();
+    newSrc.execute();
 }
