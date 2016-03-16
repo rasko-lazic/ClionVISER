@@ -1,9 +1,9 @@
-#include "Predavanje2.cpp"
+#include "Predavanje4.cpp"
 
 using namespace std;
 
 int main() {
-    Predavanje2 newSrc;
+    Predavanje4 newSrc;
 
     newSrc.execute();
 }

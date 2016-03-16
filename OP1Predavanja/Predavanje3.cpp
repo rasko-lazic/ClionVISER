@@ -2,10 +2,7 @@
 // Created by rasko-lazic on 3/11/2016.
 //
 
-#pragma once
-
 #include "Predavanje.h"
-#include <iostream>
 #include <math.h>
 #include <cstdlib>
 #include <time.h>
@@ -30,7 +27,7 @@ public:
     }
 };
 
-class Predavanje2: public Predavanje {
+class Predavanje3 : public Predavanje {
 
 public:
     int execute(void) {
