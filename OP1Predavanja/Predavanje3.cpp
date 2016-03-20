@@ -22,9 +22,6 @@ public:
         return sqrt(pow(this->x, 2)+pow(this->y, 2));
     }
 
-    void show() {
-        cout << this->x << "\n" << this->y << endl;
-    }
 };
 
 class Predavanje3 : public Predavanje {
