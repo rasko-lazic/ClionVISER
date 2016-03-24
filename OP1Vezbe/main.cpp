@@ -1,4 +1,4 @@
-#include "Domaci1.cpp"
+#include "Domaci1/Domaci1.h"
 
 int main() {
     Domaci1 newSrc;

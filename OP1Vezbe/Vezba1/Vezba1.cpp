@@ -2,7 +2,7 @@
 // Created by rasko-lazic on 3/19/16.
 //
 
-#include "Vezbe.h"
+#include "../Vezbe.h"
 #include <iostream>
 #include <math.h>
 
