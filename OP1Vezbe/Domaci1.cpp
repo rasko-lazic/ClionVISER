@@ -43,7 +43,7 @@ public:
             this->leap = true;
         }
 
-        if(value > 0 && value <=     monthLength[this->month - 1]) {
+        if(value >= 1 && value <= monthLength[this->month - 1]) {
             day = value;
 
             return 0;
