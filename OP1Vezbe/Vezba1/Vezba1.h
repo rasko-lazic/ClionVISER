@@ -10,7 +10,7 @@
 class Vezba1: public Vezba {
 public:
 
-    int execute();
+    int execute(void);
 };
 
 #endif //OP1VEZBE_VEZBA1_H

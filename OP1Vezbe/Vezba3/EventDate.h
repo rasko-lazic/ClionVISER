@@ -15,7 +15,7 @@ public:
 
     EventDate(int day, int month, int year);
 
-    static EventDate compareDates(EventDate date1, EventDate date2);
+    static void compareDates(EventDate date1, EventDate date2);
 
     void setYear(int value);
 
