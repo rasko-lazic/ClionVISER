@@ -1,7 +1,7 @@
-#include "Vezba2/Vezba2.h"
+#include "Vezba3/Vezba3.h"
 
 int main() {
-    Vezba2 newSrc;
+    Vezba3 newSrc;
 
     newSrc.execute();
 };
