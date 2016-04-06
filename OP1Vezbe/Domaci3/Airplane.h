@@ -7,24 +7,20 @@
 
 #include "Ticket.h"
 
+using namespace std;
+
 class Airplane {
 private:
-    int rowCount;
-    int seatCount;
-    Ticket** allTickets;
+    Ticket *allTickets[rowCount][seatCount];
 public:
 
-    Airplane(int rows, int seats);
+    Airplane();
 
-    bool isSeatFree();
+    bool isSeatFree(int row, int seat);
 
-    double totalSold();
+    void showTotalSold();
 
-    void showSold();
-
-    bool sellSeat();
-
-    Ticket getSeat();
+    bool sellTicket(Ticket* buyer);
 
     void showAirplane();
 };

@@ -14,19 +14,21 @@ Ticket::Ticket(int row, int seat, double price) {
 }
 
 int Ticket::setRow(int row) {
-    if(row >= 1 && row <= rowCount) {
+    if (row >= 1 && row <= rowCount) {
         ticketRow = row;
         return 0;
     } else {
+        cout << "Desired row can't be found." << endl;
         return 1;
     }
 }
 
 int Ticket::setSeat(int seat) {
-    if(seat >= 1 && seat <= seatCount) {
+    if (seat >= 1 && seat <= seatCount) {
         ticketSeat = seat;
         return 0;
     } else {
+        cout << "Desired seat can't be found." << endl;
         return 1;
     }
 }

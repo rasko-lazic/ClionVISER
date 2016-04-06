@@ -5,14 +5,16 @@
 #ifndef OP1VEZBE_TICKET_H
 #define OP1VEZBE_TICKET_H
 
+const int rowCount=25;
+const int seatCount=6;
+
 class Ticket {
 private:
     int ticketRow;
     int ticketSeat;
     double ticketPrice;
+
 public:
-    const int rowCount=30;
-    const int seatCount=6;
 
     Ticket(int row, int seat, double price);
 
