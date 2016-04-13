@@ -11,7 +11,7 @@ class CuboidArray{
 private:
     int arrayMaxLength;
     int arrayCurrentLength;
-    Cuboid** pointerArray;
+    Cuboid **pointerArray;
 public:
 
     CuboidArray();
@@ -20,13 +20,15 @@ public:
 
     bool isFull();
 
-    bool pushCuboid(Cuboid cub1);
+    bool pushCuboid(Cuboid *cub1);
 
     bool popCuboid(int index);
 
     double getTotalArea();
 
     double getTotalVolume();
+
+    void showCuboidArray();
 
 };
 
