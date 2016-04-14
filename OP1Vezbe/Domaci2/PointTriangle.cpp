@@ -3,7 +3,6 @@
 //
 
 #include "PointTriangle.h"
-#include "Point.h"
 #include <iostream>
 #include <math.h>
 
