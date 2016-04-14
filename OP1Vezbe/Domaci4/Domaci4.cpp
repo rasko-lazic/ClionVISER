@@ -21,7 +21,7 @@ int Domaci4::execute() {
     firstArray.pushCuboid(&cube2);
     firstArray.pushCuboid(&cube3);
 
-    secondArray.pushCuboid(&cube4);
+    secondArray.pushCuboid(&cube4); 
     secondArray.pushCuboid(&cube5);
 
     cout << "Total volume of first array is: " << firstArray.getTotalVolume() << endl;
