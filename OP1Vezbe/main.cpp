@@ -1,7 +1,7 @@
-#include "Domaci6/Domaci6.h"
+#include "Domaci6Custom/Domaci6Custom.h"
 
 int main() {
-    Domaci6 newSrc;
+    Domaci6Custom newSrc;
 
     newSrc.execute();
 }
