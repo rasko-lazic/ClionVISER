@@ -1,7 +1,7 @@
-#include "Domaci6/Domaci6.h"
+#include "Domaci7/Domaci7.h"
 
 int main() {
-    Domaci6 newSrc;
+    Domaci7 newSrc;
 
     newSrc.execute();
 }

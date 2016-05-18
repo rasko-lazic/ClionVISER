@@ -19,7 +19,7 @@ void DLList::setElement(string str) {
     listElement* e = new listElement;
     e->value = str;
 
-    if(first = nullptr) {
+    if(first == nullptr) {
         first = e;
         last = e;
     } else {
