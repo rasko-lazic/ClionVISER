@@ -13,6 +13,7 @@ class DLList {
 private:
     struct listElement {
         string value;
+        int index;
         listElement* previous;
         listElement* next;
     };
@@ -26,9 +27,17 @@ public:
 
     void setElement(string str);
 
-    listElement* getElement(string index);
+    string getElement(int search);
 
-    void insertAfter(string ref, string fresh);
+    void insertAfter(int search, string fresh);
+
+    void incrementIndex(int search);
+
+    void decrementIndex(int search);
+
+    bool checkIfOverHalf(int search);
+
+    void removeElement(int search);
 
     void showList();
 };
