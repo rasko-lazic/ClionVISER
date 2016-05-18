@@ -5,8 +5,10 @@
 #include "Dictionary.h"
 #include <iostream>
 
-Dictionary::Dictionary(Dictionary &value) {
-
+Dictionary::Dictionary(const Dictionary &value) {
+    dictionaryTitle = value.dictionaryTitle;
+    first = value.first;
+    last = value.last;
 }
 
 void Dictionary::addWord(Word *value) {
@@ -21,12 +23,12 @@ void Dictionary::addWord(Word *value) {
     last = wl;
 }
 
-Word Dictionary::findWord(string original) {
+Word* Dictionary::findWord(string original) {
     wordList* iter = first;
 
     while(iter != nullptr) {
         if(iter->word->getOriginal() == original) {
-            return *iter->word;
+            return iter->word;
         }
         iter = iter->next;
     }

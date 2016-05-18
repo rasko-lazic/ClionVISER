@@ -4,6 +4,7 @@
 
 #include "Domaci7.h"
 #include "Dictionary.h"
+#include <iostream>
 
 int Domaci7::execute() {
     Dictionary dic1("Serbian-English dictionary");
@@ -14,6 +15,17 @@ int Domaci7::execute() {
     dic1.addWord(&w2);
     dic1.addWord(&w3);
 
-    dic1.showDictionary();
+    Dictionary copyDic1;
+
+    copyDic1 = dic1;
+
+    copyDic1.showDictionary();
+
+    Word *fw1;
+
+    fw1 = dic1.findWord("sto");
+
+    cout << "Found word: ";
+    fw1->showWord();
 }
 

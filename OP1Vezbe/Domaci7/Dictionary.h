@@ -20,15 +20,19 @@ private:
 
 public:
 
+    Dictionary() = default;
+
     Dictionary(string title) : dictionaryTitle(title), first(nullptr) { }
 
-    Dictionary(Dictionary& value);
+    //TODO why const???
+    Dictionary(const Dictionary& value);
 
-    Dictionary(Dictionary&& value);
+    //TODO check move constructor syntax and usage
+    //Dictionary(Dictionary&& value);
 
     void addWord(Word* value);
 
-    Word findWord(string original);
+    Word* findWord(string original);
 
     void showDictionary();
 };
