@@ -34,4 +34,6 @@ int Domaci4::execute() {
 
     cout << "Array after pop: " << endl;
     firstArray.showCuboidArray();
+
+    return 0;
 }

@@ -27,5 +27,7 @@ int Domaci7::execute() {
 
     cout << "Found word: ";
     fw1->showWord();
+
+    return 0;
 }
 

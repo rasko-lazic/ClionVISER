@@ -16,6 +16,7 @@ private:
 
 public:
 
+    //TODO check single attribute initialization
     News(string title, string content) : newsTitle(title), newsContent(content) { }
 
     News() = default;

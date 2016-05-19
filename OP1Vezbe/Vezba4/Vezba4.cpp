@@ -27,4 +27,6 @@ int Vezba4::execute() {
     for(int i = 0; i < 5; i++) {
         parkingRow[i].showParking();
     }
+
+    return 0;
 }

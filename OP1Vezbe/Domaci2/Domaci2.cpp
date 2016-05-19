@@ -19,4 +19,6 @@ int Domaci2::execute(void) {
     cout << "Area of first triangle is: "<< t1.getArea() << endl;
 
     PointTriangle::checkSameVertices(t1,t2);
+
+    return 0;
 }

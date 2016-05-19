@@ -35,4 +35,6 @@ int Domaci1::execute(void) {
     Date next = newDate.nextDay();
 
     next.showDate();
+
+    return 0;
 }

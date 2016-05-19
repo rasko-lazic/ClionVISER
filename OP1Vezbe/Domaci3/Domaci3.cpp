@@ -17,4 +17,6 @@ int Domaci3::execute() {
     AS38.sellTicket(&ticket2);
 
     AS38.showAirplane();
+
+    return 0;
 }

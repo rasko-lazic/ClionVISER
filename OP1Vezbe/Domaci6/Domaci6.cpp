@@ -27,4 +27,6 @@ int Domaci6::execute() {
     st1.popStack();
 
     st1.showStack();
+
+    return 0;
 }

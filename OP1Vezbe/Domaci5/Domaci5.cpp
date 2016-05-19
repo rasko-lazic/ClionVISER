@@ -18,4 +18,6 @@ int Domaci5::execute() {
     cout << "\n\nSecond Fibonacci array: " << endl;
     fib2.showArray();
     cout << "Sum: " << fib2.arraySum() << endl;
+
+    return 0;
 }

@@ -44,4 +44,6 @@ int Vezba5::execute() {
 
     cout << "\nAfter sort:\n\n";
     showTriangleArray(triangleArray, 4);
+
+    return 0;
 }

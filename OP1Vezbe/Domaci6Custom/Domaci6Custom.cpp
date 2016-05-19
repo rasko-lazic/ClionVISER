@@ -29,4 +29,6 @@ int Domaci6Custom::execute() {
 
     cout << "\nList after remove:\n";
     newList.showList();
+
+    return 0;
 }

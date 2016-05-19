@@ -22,4 +22,6 @@ int Vezba1::execute() {
 
     cout << "The circumference of the given triangle is: " << newTriangle.getCirc() << endl;
     cout << "The area of the given triangle is: " << newTriangle.getArea() << endl;
+
+    return 0;
 }
