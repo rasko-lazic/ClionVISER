@@ -12,44 +12,44 @@ Vector::Vector(const Vector &value) {
 }
 
 Vector::~Vector() {
-    xCoord = 0;
-    yCoord = 0;
-    zCoord = 0;
+    xCoord = nullptr;
+    yCoord = nullptr;
+    zCoord = nullptr;
 }
 
 bool Vector::operator>(const Vector& v1) {
-    double i1 = sqrt(v1.xCoord * v1.xCoord + v1.yCoord * v1.yCoord + v1.zCoord * v1.zCoord);
-    double i2 = sqrt(this->xCoord * this->xCoord + this->yCoord * this->yCoord + this->zCoord * this->zCoord);
-    cout << i1 << endl;
-    cout << i2 << endl;
+    double i1 = sqrt(*(this->xCoord) * *(this->xCoord) + *(this->yCoord) * *(this->yCoord) + *(this->zCoord) * *(this->zCoord));
+    double i2 = sqrt(*(v1.xCoord) * *(v1.xCoord) + *(v1.yCoord) * *(v1.yCoord) + *(v1.zCoord) * *(v1.zCoord));
+
     return i1 > i2;
 }
 
 bool Vector::operator==(const Vector& v1) {
-    double i1 = sqrt(v1.xCoord * v1.xCoord + v1.yCoord * v1.yCoord + v1.zCoord * v1.zCoord);
-    double i2 = sqrt(this->xCoord *this->xCoord +this->yCoord *this->yCoord +this->zCoord *this->zCoord);
+    double i1 = sqrt(*(v1.xCoord) * *(v1.xCoord) + *(v1.yCoord) * *(v1.yCoord) + *(v1.zCoord) * *(v1.zCoord));
+    double i2 = sqrt(*(this->xCoord) * *(this->xCoord) + *(this->yCoord) * *(this->yCoord) + *(this->zCoord) * *(this->zCoord));
 
     return i1 == i2;
 }
 
 Vector Vector::operator+(const Vector& v1) {
-    Vector result(v1.xCoord + this->xCoord, v1.yCoord + this->yCoord, v1.zCoord + this->zCoord);
+    Vector result(*(v1.xCoord) + *(this->xCoord), *(v1.yCoord) + *(this->yCoord), *(v1.zCoord) + *(this->zCoord));
 
     return result;
 }
 
 Vector Vector::operator-(const Vector& v1) {
-    Vector result(v1.xCoord - this->xCoord, v1.yCoord - this->yCoord, v1.zCoord - this->zCoord);
+    Vector result(*(this->xCoord) - *(v1.xCoord), *(this->yCoord) - *(v1.yCoord), *(this->zCoord) - *(v1.zCoord));
 
     return result;
 }
 
 Vector Vector::operator*(int s) {
-    Vector result(this->xCoord * s, this->yCoord * s, this->zCoord * s);
+    Vector result(*(this->xCoord) * s, *(this->yCoord) * s, *(this->zCoord) * s);
 
     return result;
 }
 
 ostream& operator<<(ostream &out, const Vector& v1) {
-    return out << "(" << v1.xCoord << ", " << v1.yCoord << ", " << v1.zCoord << ")" << endl;
+
+    return out << "(" << *(v1.xCoord) << ", " << *(v1.yCoord) << ", " << *(v1.zCoord) << ")" << endl;
 }

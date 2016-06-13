@@ -11,15 +11,15 @@ using namespace std;
 
 class Vector {
 private:
-    int xCoord;
-    int yCoord;
-    int zCoord;
+    int* xCoord;
+    int* yCoord;
+    int* zCoord;
 
 public:
 
-    Vector() : xCoord(0), yCoord(0), zCoord(0) { }
+    Vector() : xCoord(new int (0)), yCoord(new int (0)), zCoord(new int (0)) { }
 
-    Vector(int x, int y, int z) : xCoord(x), yCoord(y), zCoord(z) { }
+    Vector(int x, int y, int z) : xCoord(new int (x)), yCoord(new int (y)), zCoord(new int (z)) { }
 
     Vector(const Vector& value);
 

@@ -1,7 +1,7 @@
-#include "Domaci8/Domaci8.h"
+#include "Vezba9/Vezba9.h"
 
 int main() {
-    Domaci8 newSrc;
+    Vezba9 newSrc;
 
     newSrc.execute();
 }
